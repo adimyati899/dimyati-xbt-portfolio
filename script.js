@@ -110,3 +110,12 @@ document.querySelectorAll('.magnetic').forEach(el=>{
   });
   el.addEventListener('mouseleave',()=>el.style.transform='');
 });
+
+/* V3: recover gracefully if mobile delays media loading */
+document.querySelectorAll('.media-card video, .hero-bg').forEach(v=>{
+  v.muted=true;
+  v.setAttribute('muted','');
+  v.setAttribute('playsinline','');
+  v.setAttribute('webkit-playsinline','');
+  v.addEventListener('loadedmetadata',()=>{ if(v.classList.contains('hero-bg')) v.play().catch(()=>{}); });
+});

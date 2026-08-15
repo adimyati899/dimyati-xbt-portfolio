@@ -52,3 +52,15 @@ header{box-shadow:0 8px 40px #0005}
   .visual-wall-head{display:block;line-height:1.8}
   .visual-wall-head small{display:block}
 }
+
+/* V3 media reliability + presentation */
+.media-card{background:
+radial-gradient(circle at 80% 15%,#cfff2510,transparent 30%),
+#101015}
+.media-card video{background:#0c0c10}
+.media-card video::-webkit-media-controls{display:none!important}
+.media-card .play{appearance:none;cursor:pointer}
+@media(max-width:560px){
+  .media-card{min-height:330px!important}
+  .media-card video{min-height:330px!important}
+}
