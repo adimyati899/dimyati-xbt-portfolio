@@ -153,3 +153,12 @@ if(heroVideo&&heroSound){
     heroSound.classList.toggle('sound-on',!heroVideo.muted);
   });
 }
+
+
+/* Accessible keyboard activation for media sound/play controls. */
+document.querySelectorAll('.play,.hero-sound').forEach(btn=>btn.setAttribute('aria-pressed','false'));
+const syncPressed=()=>{
+  document.querySelectorAll('.media-card').forEach(card=>{const v=card.querySelector('video'),b=card.querySelector('.play');if(v&&b)b.setAttribute('aria-pressed',String(!v.paused&&!v.muted));});
+  const hv=document.querySelector('.hero-bg'),hb=document.querySelector('.hero-sound');if(hv&&hb)hb.setAttribute('aria-pressed',String(!hv.muted));
+};
+document.addEventListener('click',()=>setTimeout(syncPressed,80));
