@@ -1,16 +1,7 @@
-DIMYATI_XBT — NOVA 2
-
-Modern compact AI creator portfolio.
-
-Included:
-- 7 compressed MP4 assets (one hero background + six selected work clips)
-- supplied profile/brand/social images converted to WebP
-- 6 supplied Instagram Reel links mapped in Selected Work
-- Google Drive archive link
-- GIMI, Pollo AI, VEED, CapCut, InVideo, Midnight, PixelDojo brand cards
-- InVideo media-library links
-- 3D tilt, scroll reveal, hover, marquee, loading screen and scroll progress
-
-The local media is compressed to keep the whole package below 16 MB.
-
-Upload the contents of this folder together to a static Cloudflare Worker/Pages deployment.
+DIMYATI_XBT — REBUILD 01
+- Hero background uses the uploaded video: hero-background.mp4
+- Dark AI/creative-tech visual system
+- Uses DIMYATI_XBT portfolio facts supplied in the conversation
+- Responsive mobile-first layout
+- Background video autoplay is muted by browser policy; SOUND toggles audio after user interaction
+- Replace/add work media in the Work section later without changing the hero system
